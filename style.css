@@ -538,6 +538,7 @@ body {
     .container-p {
         grid-column: 1 / 4;
         padding-left: 0;
+        padding-right: 0gi;
 
     }
 
