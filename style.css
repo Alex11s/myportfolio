@@ -1,0 +1,551 @@
+body {
+    background-color: var(--x--x); /* Cambia --x--x por el color que desees */
+}
+* {
+    font-family: 'Roboto Mono', sans-serif;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+:root {
+
+   /* --z--z: #11072f;
+    --x--x: #180a41;
+    */
+    --z--z: #11001c;
+    --x--x: #190028;
+    --w--w: #45FFCA;
+    --y--y: #af9bea;
+    --g--g: #ff448c;
+    --a--a: #FEDB39;
+
+}
+
+.container-skinner {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(180px, 1fr));
+    grid-template-rows: repeat(autofit, minmax(1fr));
+    gap: 150px;
+    
+
+}
+
+/* n a v */
+
+.nav-bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    position: fixed;
+
+    
+
+
+}
+
+
+.nav-bar-img img{
+    width: 150px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    
+
+}
+
+.nav-bar-link {
+    background-color: var(--z--z);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.link-bar  {
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.link-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-bar:hover a{
+    color: var(--w--w)
+
+}
+
+
+/* c o n t*/
+
+.container-p {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: var(--x--x);
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+.container-pp{
+    padding-left: 70px;
+    padding-right: 70px;
+    border-bottom: 1px solid var(--y--y);
+
+}
+
+.letter-gf h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+	font-size: 10vw;
+
+
+}
+
+.border {
+    font-size: 10vh;
+	position: absolute;
+	color: var(--g--g);  
+    text-shadow:
+    -1px -1px 0 , 
+    1px -1px 0 ,
+    -1px 1px 0 ,
+    1px 1px 0 ;  
+}
+
+.wave {
+	color: var(--x--x);
+	animation: wave 3s ease-in-out infinite;
+}
+
+
+@keyframes wave {
+	0%, 100% {
+		clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+
+	50% {
+		clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+}
+
+.bio-2 {
+    color: var(--y--y);
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    letter-spacing: 3px;
+    font-weight: 40;
+}
+
+.wo-me {
+    color: var(--y--y);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+.email-p {
+    color: var(--g--g);
+    padding-top: 70px;
+    font-size: 20px;
+    font-weight: 900px;
+    display: flex;
+    min-width: 20px;
+    flex-wrap: wrap;
+
+    
+    
+}
+
+.email-p a {
+    color: var(--w--w);
+    padding: 20px;
+    text-decoration: none;
+   
+}
+
+.email-p a:hover {
+    color: var(--a--a);
+}
+
+
+
+.button-cv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.button-cv button {
+    border: none;
+    background-color: var(--g--g);
+    color: #fff;
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    font-weight: bolder;
+
+}
+
+.button-cv button:hover {
+    background-color: var(--w--w);
+    color: var(--z--z);
+}
+
+.icon-s {
+    padding-bottom: 20px;
+}
+
+.icon-s a{
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.icon-s a:hover {
+    color: var(--w--w);
+}
+
+
+.typing {
+  font-size: 40px;
+  padding: 20px;
+  padding-left: 0;
+  color: #af9bea;
+}
+
+.typing::before {
+  content: '';
+  animation: text 15s step-end infinite;
+}
+
+.typing::after {
+  content: '';
+  display: inline-block;
+  width: 0.1em;
+  height: 0.75em;
+  margin-left: 0.1em;
+  background-color: #fff;
+  animation: blink 0.75s ease-in-out infinite;
+}
+
+@keyframes text {
+    0%, 100% { content: ''; }
+    2.5% { content: 'A'; }
+    5% { content: 'An'; }
+    7.5% { content: 'Ana'; }
+    10% { content: 'Anal'; }
+    12.5% { content: 'Anali'; }
+    15% { content: 'Analis'; }
+    17.5% { content: 'Analista'; }
+    20% { content: 'Analista e'; }
+    22.5% { content: 'Analista en'; }
+    25% { content: 'Analista en S'; }
+    27.5% { content: 'Analista en Si'; }
+    30% { content: 'Analista en Sis'; }
+    32.5% { content: 'Analista en Sist'; }
+    35% { content: 'Analista en Siste'; }
+    37.5% { content: 'Analista en Sistem'; }
+    40% { content: 'Analista en Sistemas'; }
+    42.5% { content: 'Analista en Sistemas '; }
+    45% { content: 'Analista en Siste'; }
+    47.5% { content: 'Analista en Sist'; }
+    50% { content: 'Analista en S'; }
+    52.5% { content: 'Analista en '; }
+    55% { content: 'Analista en'; }
+    57.5% { content: 'Analista e'; }
+    60% { content: 'Analista'; }
+    62.5% { content: 'Analista'; }
+    65% { content: 'Analista '; }
+    67.5% { content: 'Analista y '; }
+    70% { content: 'Analista y De'; }
+    72.5% { content: 'Analista y Desa'; }
+    75% { content: 'Analista y Desarro'; }
+    77.5% { content: 'Analista y Desarrolla'; }
+    80% { content: 'Analista y Desarrollador'; }
+    85% {content: 'Analista y Desarrollador ' ;}
+    87.5% {content: 'Analista y Desarrollador Fron';}
+    90% {content: 'Analista y Desarrollador Frontend';}
+    90% {content: 'Analista y Desarrollador Frontend ';}
+    97.5% {content: 'Analista y Desarrollador Frontend :)';}
+    100% {content: 'Analista y Desarrollador Frontend :) ';}
+  }
+  
+
+@keyframes blink {
+  0%, 25%, 100% { opacity: 1; }
+  50%, 75% { opacity: 0; }
+}
+
+/*Educación*/
+
+
+.education {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--x--x);
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--y--y);
+    
+
+}
+.education-2{
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--x--x);
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.text-education {
+    color: var(--y--y);
+    padding-top: 40px;
+}
+
+.title-u{
+    color: var(--g--g);
+    letter-spacing: 3px;
+    font-weight: 40;
+    font-size: 20px;
+    padding: 0;
+    
+
+}
+
+.title-u2 {
+    color: var(--g--g);
+    letter-spacing: 3px;
+    font-weight: 40;
+    font-size: 20px;
+    padding: 0;
+
+}
+
+
+    
+
+.date-u {
+    letter-spacing: 3px;
+    font-weight: 40;
+    font-size: 20px;
+    padding-left: 300px;
+    color: var(--w--w);
+
+}
+
+.date-u2 {
+    letter-spacing: 3px;
+    font-weight: 40;
+    font-size: 20px;
+    padding-left: 270px;
+    color: var(--w--w);
+
+}
+
+.place-date{
+    display: inline;
+}
+
+.education-p {
+    display: block;
+    padding-left: 70px;
+}
+
+/*Portafolio*/
+
+.portafolio-1{
+    border-bottom: 1px solid var(--y--y);
+}
+
+.portafolio {
+    display: inline-block;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: var(--x--x);
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    
+}
+.portfolio-text{
+    color: var(--y--y);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.port-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: min-content;
+    background-color: var(--z--z);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.port-container img{
+    width: 350px; 
+    border-radius: 17px 17px 0px 0px;
+    
+    
+}
+
+.port-container a{
+    color: var(--g--g);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.port-container a:hover{
+    color: var(--w--w);
+
+}
+.port-container p{
+    color: var(--y--y);
+    padding: 20px 15px 15px 15px;
+}
+.icon-port{
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+
+}
+.link-port{
+    padding: 10px;
+}
+
+/* Habilidades */
+
+.icon-h img{
+    width: 30px;
+    padding-right: 10px;
+    transition: .5s;
+    position: relative;
+    
+}
+.icon-h img:hover{
+    padding-left: 15px;
+}
+
+
+.habilidades-2{
+    border-bottom: 1px solid var(--y--y);
+    
+    
+}
+
+.skills-a{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: var(--x--x);
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    
+
+}
+
+.skills-p{
+    color: var(--y--y);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+
+}
+
+.code-p {
+    color: var(--g--g);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* contacto */
+
+
+.contact-1 {
+
+    display: inline-block;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: var(--x--x);
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+
+}
+.contact-1 h1 {
+    font-size: 20px;
+    color: var(--y--y);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: var(--w--w);
+}
+.contact-link a:hover {
+    color: var(--a--a);
+}
+.contact-link {
+    color: var(--g--g);
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+.e-text {
+   padding-bottom: 20px;
+
+}
+.contact-link img{
+    width: 17px;
+}
+
+/* l o v e */
+
+@media screen and (max-width: 800px) {
+
+    /*nav*/
+    .nav-bar {
+        display: none;
+        
+    }
+    /*container-p*/
+    .container-p {
+        grid-column: 1 / 4;
+        padding-left: 0;
+
+    }
+
+
+
+
+
+}
+
+
+
