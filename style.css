@@ -23,10 +23,8 @@ body {
 }
 
 .container-skinner {
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(180px, 1fr));
-    grid-template-rows: repeat(autofit, minmax(1fr));
-    gap: 150px;
+    display: grid; 
+    gap: 130px;
     
 
 }
@@ -323,6 +321,7 @@ body {
     font-size: 20px;
     padding: 0;
     
+    
 
 }
 
@@ -342,8 +341,8 @@ body {
     letter-spacing: 3px;
     font-weight: 40;
     font-size: 20px;
-    padding-left: 300px;
     color: var(--w--w);
+    padding-left: 145px;
 
 }
 
@@ -351,8 +350,8 @@ body {
     letter-spacing: 3px;
     font-weight: 40;
     font-size: 20px;
-    padding-left: 270px;
     color: var(--w--w);
+    padding-left: 100px;
 
 }
 
@@ -527,20 +526,59 @@ body {
 
 /* l o v e */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
 
     /*nav*/
     .nav-bar {
         display: none;
         
     }
-    /*container-p*/
+    /*Gaston*/
     .container-p {
         grid-column: 1 / 4;
         padding-left: 0;
-        padding-right: 0gi;
+        padding-right: 0;
+        width: 400px;
 
     }
+
+
+    .email-p a {
+        display: table-footer-group;
+
+    }
+    /*Eduacació*/
+    .date-u {
+        padding-left: 0;
+        padding-bottom: 20px;
+
+    }
+    .date-u2 {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .education-2 {
+        display:table-row;
+    }
+
+    .text-education{
+        padding-bottom: 20px;
+    }
+    .title-u{
+        padding-bottom: 20px;
+
+    }
+
+    /*Portafolio*/
+
+    .port-container img{
+        width: 250px; 
+    }
+    .contact-1{
+        padding-right: 0;
+    }
+
+    
 
 
 
