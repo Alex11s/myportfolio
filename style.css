@@ -45,6 +45,9 @@ body {
     grid-row: 1 / 6;
     position: fixed;
 
+
+
+    
     
 
 
@@ -66,7 +69,7 @@ body {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    height: 9999vh;
+    height: 999vh;
     width: 100%;
 
 
@@ -537,11 +540,7 @@ body {
 
 /* l o v e */
 
-@media screen and (max-width: 900px) {
-
-    .container-skinner {
-        display: flex;
-    }
+@media screen and (max-width: 500px) {
 
     /*nav*/
     .nav-bar {
@@ -553,6 +552,7 @@ body {
         grid-column: 1 / 4;
         padding-left: 0;
         padding-right: 0;
+        width: 100vw;
 
     }
     
@@ -564,8 +564,7 @@ body {
     }
 
     .typing{
-    font-size: 4vw;
-    min-width: 400px;
+        height: 150px;
     }
     /*Eduacació*/
     .date-u {
@@ -599,7 +598,6 @@ body {
     }
 
     /*hambur*/
-
 
 
     .container {
@@ -755,13 +753,14 @@ body {
 
 }
 
-.p1p {
-    margin-top: 30px;
-    font-size: 70px;
-}
+
+
+
 
 .p1 {
+    margin-top: 30px;
     color: var(--g--g);
+    font-size: 100px;
 }
 
 .p2{
@@ -769,7 +768,7 @@ body {
 }
 
 .typ {
-    margin: 20px 0 20px 0;
+   font-size: 5vw;
 }
 
 
