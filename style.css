@@ -542,6 +542,14 @@ body {
 
 @media screen and (max-width: 500px) {
 
+    .p1p h1 {
+       font-size: 15vw;
+    }
+
+    .typ {
+        width: 70vw;
+    }
+
     /*nav*/
     .nav-bar {
         display: none;
