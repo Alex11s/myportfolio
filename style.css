@@ -1,5 +1,5 @@
 body {
-    background-color: var(--x--x); /* Cambia --x--x por el color que desees */
+    background-color: var(--x--x);
 }
 * {
     font-family: 'Roboto Mono', sans-serif;
@@ -32,45 +32,29 @@ body {
 /*container*/
 
 .container-skinner {
-    display: grid; 
-    gap: 130px;
-    
+    display: grid;
+    grid-template-columns: 200px 1fr;
+   
 
 }
+
 
 /* n a v */
-
-.nav-bar {
-    grid-column: 1 / 2;
-    grid-row: 1 / 6;
-    position: fixed;
-
-
-
-    
-    
-
-
-}
 
 
 .nav-bar-img img{
     width: 150px;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    padding-top: 70px;
-    
-
+    margin-top: 70px;
 }
 
 .nav-bar-link {
-    background-color: var(--z--z);
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    height: 999vh;
-    width: 100%;
+    border-right: .5px solid var(--y--y);
+    grid-column: 1/2;
+    height: 100%;
+    
 
 
 }
@@ -78,34 +62,37 @@ body {
 .link-bar  {
     padding: 15px;
     color: #fff;
-    letter-spacing: 2px;
 }
 
 .link-bar a {
     text-decoration: none;
-    color: #fff;
+    color: #bfb9d1;
 }
 
 .link-bar:hover a{
     color: var(--w--w)
 
 }
+.jeje{
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    padding-top: 15px;
+}
 
 
 /* c o n t*/
 
 .container-p {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    
     background-color: var(--x--x);
-    padding-left: 70px;
-    padding-right: 70px;
 
 }
 .container-pp{
-    padding-left: 70px;
     padding-right: 70px;
-    border-bottom: 1px solid var(--y--y);
+    border-bottom: .5px solid var(--y--y);
+    grid-column: 1/2;
+    padding-left: 40px;
 
 }
 
@@ -300,13 +287,13 @@ body {
 
 .education {
     display: flex;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 1 / 2;
     background-color: var(--x--x);
     padding-right: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-    border-bottom: 1px solid var(--y--y);
+    border-bottom: .5px solid var(--y--y);
+    padding-left: 40px;
     
 
 }
@@ -373,13 +360,17 @@ body {
 
 .education-p {
     display: block;
-    padding-left: 70px;
 }
 
 /*Portafolio*/
 
+.p4{
+    padding-top: 50px;
+}
+
 .portafolio-1{
-    border-bottom: 1px solid var(--y--y);
+    border-bottom: .5px solid var(--y--y);
+    padding-left: 40px;
 }
 
 .portafolio {
@@ -390,7 +381,6 @@ body {
     padding-right: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 70px;
     
 }
 .portfolio-text{
@@ -458,7 +448,8 @@ body {
 
 
 .habilidades-2{
-    border-bottom: 1px solid var(--y--y);
+    border-bottom: .5px solid var(--y--y);
+    padding-left: 40px;
     
     
 }
@@ -470,7 +461,6 @@ body {
     padding-right: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 70px;
     
 
 }
@@ -503,11 +493,12 @@ body {
     padding-right: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 70px;
+    padding-left: 40px;
+    
 
 }
 .contact-1 h1 {
-    font-size: 20px;
+    font-size: 1.5em;
     color: var(--y--y);
     padding-top: 40px;
     padding-bottom: 40px;
@@ -538,7 +529,7 @@ body {
 
 
 
-/* l o v e */
+/*               l               o               v               e               */
 
 @media screen and (max-width: 500px) {
 
@@ -766,7 +757,7 @@ body {
 
 
 .p1 {
-    margin-top: 30px;
+    margin-top: 120px;
     color: var(--g--g);
     font-size: 100px;
 }
