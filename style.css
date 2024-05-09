@@ -54,6 +54,7 @@ body {
     border-right: .5px solid var(--y--y);
     grid-column: 1/2;
     height: 100%;
+    padding-right: 15px;
     
 
 
@@ -66,7 +67,7 @@ body {
 
 .link-bar a {
     text-decoration: none;
-    color: #bfb9d1;
+    color: #c9c1e2;
 }
 
 .link-bar:hover a{
@@ -75,10 +76,11 @@ body {
 }
 .jeje{
     position: -webkit-sticky;
-	position: sticky;
+	position: fixed;
 	top: 0;
-    padding-top: 15px;
 }
+
+
 
 
 /* c o n t*/
