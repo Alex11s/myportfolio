@@ -42,6 +42,7 @@ body {
 /* n a v */
 
 
+
 .nav-bar-img img{
     width: 150px;
     margin-top: 70px;
@@ -548,6 +549,21 @@ body {
         display: none;
         
     }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    
+        .container-skinner {
+            padding-top: 62px; /* Ajustar según el tamaño de tu barra de navegación */
+        }
+
+    
+
     /*Gaston*/
     .container-p {
         grid-column: 1 / 4;
