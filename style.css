@@ -42,7 +42,6 @@ body {
 /* n a v */
 
 
-
 .nav-bar-img img{
     width: 150px;
     margin-top: 70px;
@@ -55,7 +54,7 @@ body {
     border-right: .5px solid var(--y--y);
     grid-column: 1/2;
     height: 100%;
-    padding-right: 15px;
+    padding-right: 20px;
     
 
 
@@ -77,8 +76,8 @@ body {
 }
 .jeje{
     position: -webkit-sticky;
-	position: fixed;
-	top: 0;
+	position: sticky;
+	top: 20px;
 }
 
 
@@ -549,25 +548,10 @@ body {
         display: none;
         
     }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-    
-        .container-skinner {
-            padding-top: 62px; /* Ajustar según el tamaño de tu barra de navegación */
-        }
-
-    
-
     /*Gaston*/
     .container-p {
         grid-column: 1 / 4;
-        padding-left: 0;
+        padding-left: 30px;
         padding-right: 0;
         width: 100vw;
 
@@ -775,7 +759,7 @@ body {
 
 
 .p1 {
-    margin-top: 120px;
+    margin-top: 40px;
     color: var(--g--g);
     font-size: 100px;
 }
